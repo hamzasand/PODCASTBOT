@@ -1,5 +1,4 @@
 # Dateset main covid based dateset from huggiongface 
-
 # You can change datase according your needs
 import torch
 from datasets import load_dataset

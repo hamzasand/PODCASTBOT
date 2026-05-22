@@ -11,7 +11,6 @@ def preprocess_function(examples):
     # Adjust these fields based on your dataset structure
     inputs = examples['input']  # Assuming 'article' is the field name for the input text
     targets = examples['output']  # Assuming 'abstract' is the field name for the target text
-
     # Debugging: Print the first example to ensure it's in the expected format
     print(f"First input example: {inputs[0]}")
     print(f"First target example: {targets[0]}")

@@ -54,6 +54,7 @@ training_args = TrainingArguments(
     
     per_device_eval_batch_size=4,
     weight_decay=0.01,
+    
     save_total_limit=3,
     num_train_epochs=20,
     predict_with_generate=True,

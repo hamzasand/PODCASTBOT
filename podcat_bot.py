@@ -30,6 +30,7 @@ def preprocess_function(examples):
     with tokenizer.as_target_tokenizer():
         
         labels = tokenizer(targets, max_length=1024, truncation=True, padding="max_length")
+        
     model_inputs["labels"] = labels["input_ids"]
     return model_inputs
 

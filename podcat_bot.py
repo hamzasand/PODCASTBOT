@@ -14,6 +14,7 @@ tokenizer = BartTokenizer.from_pretrained("facebook/bart-large")
 
 def preprocess_function(examples):
     # Adjust these fields based on your dataset structure
+    
     inputs = examples['input']  # Assuming 'article' is the field name for the input text
     
     targets = examples['output']  # Assuming 'abstract' is the field name for the target text

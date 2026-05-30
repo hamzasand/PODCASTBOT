@@ -18,7 +18,6 @@ def preprocess_function(examples):
     
     print(f"First input example: {inputs[0]}")
     print(f"First target example: {targets[0]}")
-    
     model_inputs = tokenizer(inputs, max_length=1024, truncation=True, padding="max_length")
 
     # Setup the tokenizer for targets
